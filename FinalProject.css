@@ -1,44 +1,15 @@
-nav {
-  position: fixed;
-  top:0;
-  left:0;
-  width: 100%;
-  background-color: var(--black);
-  color: var(--white);
+/* Grid Container 2 */
+.body-grid-container {
+  display: grid;
+  height: 400px;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-rows: repeat(5, 1fr);
 }
 
-nav ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
+.body-grid-container .body-grid-About {
 }
 
-nav ul li {
-  display: inline-block;
-}
-
-nav ul li a {
-  display:block;
-  padding: 1em;
-  text-decoration: none;
-  color: var(--white);
-}
-
-nav ul li:hover a {
-  background-color: var(--gray1);
-}
-
-.main {
-  margin-top: 100px;
-  padding: 0 0.5em;
-}
-
-body {
-    background: var(--purple);
-    color: var(--white);
-  }
-
-@media (max-width:415px) {
+@media (max-width: 415px) {
   nav ul li {
     width: 100%;
   }

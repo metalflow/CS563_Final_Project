@@ -16,3 +16,9 @@ my dog, and my cats. This took about an hour. Liveserver displays this webpage m
 the most basic MySpace page for the early 90's. I thought about trying to include a web assembly
 of my Rust Solar system project, but initial googling suggested that it might be a bit of a
 problem. I will call it for today.
+03/04/2026
+I thought I would add some CSS to the page today. I thought back on the CSS that we had learned
+during the course, and I thought that grid would be a good place to start. I wanted the navbar
+to be a horizontal bar at the top of the page. I implemented a bit of the grid, but it's
+being a bit difficult to back fill the CSS. I spent about an hour on this, and I think I need
+to come back to it later. The current display of the page is really wonky.
