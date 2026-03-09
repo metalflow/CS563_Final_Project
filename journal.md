@@ -22,3 +22,10 @@ during the course, and I thought that grid would be a good place to start. I wan
 to be a horizontal bar at the top of the page. I implemented a bit of the grid, but it's
 being a bit difficult to back fill the CSS. I spent about an hour on this, and I think I need
 to come back to it later. The current display of the page is really wonky.
+03/09/2026
+I have come to accept that using Flexgrid as a primary layout tool is probably a bad idea. I am
+going to delete all the previous work and use plain old CSS to lay out the primary areas of the
+we page. Then I will use flex grid within those primary areas to lay out the content within. It
+took me about 30 minutes to get the navbar into a fixed position and the rest of the content
+to scroll independently of it. I then had to spend about 15 minutes or so googling around to
+find out how to set the Z-index to keep the navbar "on top" of everything else.
