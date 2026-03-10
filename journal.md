@@ -29,3 +29,5 @@ we page. Then I will use flex grid within those primary areas to lay out the con
 took me about 30 minutes to get the navbar into a fixed position and the rest of the content
 to scroll independently of it. I then had to spend about 15 minutes or so googling around to
 find out how to set the Z-index to keep the navbar "on top" of everything else.
+03/10/2026
+Time to make the pictures actually look nice. I set their width and height.

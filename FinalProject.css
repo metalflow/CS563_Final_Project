@@ -27,6 +27,37 @@
   width: 100%;
 }
 
+.Main .About {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-rows: repeat(6, "1fr");
+  width: 100%;
+}
+
+.Main .About .AboutHeader {
+  grid-column: span 4;
+}
+
+.Main .About .AboutSelfieDesciption {
+  grid-column: span 3;
+}
+
+.Main .About .JuliusDescription {
+  grid-column: span 3;
+}
+
+.Main .About .WinnieDescription {
+  grid-column: span 3;
+}
+
+.Main .About .ZimDescription {
+  grid-column: span 3;
+}
+
+.Main .About .AboutMeWrapUp {
+  grid-column: span 4;
+}
+
 @media (max-width: 415px) {
   nav ul li {
     width: 100%;
