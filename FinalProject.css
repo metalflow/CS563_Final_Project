@@ -18,12 +18,13 @@
   height: 40px;
   background-color: var(--darkgray);
   grid-template-columns: repeat(4, 25%);
+  grid-template-rows: 1;
   opacity: 1;
   z-index: 1000;
 }
 
 .Main {
-  position: absolute;
+  /*position: absolute;*/
   width: 100%;
 }
 
@@ -36,6 +37,7 @@
 
 .Main .About .AboutHeader {
   grid-column: span 4;
+  background-color: var(--darkgolden);
 }
 
 .Main .About .AboutSelfieDesciption {
@@ -58,26 +60,32 @@
   grid-column: span 4;
 }
 
-@media (max-width: 415px) {
-  nav ul li {
-    width: 100%;
-  }
+.Main .PreviousWorkHeader {
+  background-color: var(--darkgolden);
+}
 
-  .main {
-    margin-top: 220px;
+.Main .ProjectsHeader {
+  background-color: var(--darkgolden);
+}
+
+.Main .ContactHeader {
+  background-color: var(--darkgolden);
+}
+
+@media (max-width: 415px) {
+  .body {
+    color: var(--black);
   }
 }
 
 @media (min-width: 415px) and (max-width: 1024px) {
-  body {
-    background: var(--orange);
+  .body {
     color: var(--black);
   }
 }
 
 @media (min-width: 1025px) {
-  body {
-    background: var(--green);
-    color: var(--white);
+  .body {
+    color: var(--black);
   }
 }

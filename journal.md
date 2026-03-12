@@ -30,4 +30,10 @@ took me about 30 minutes to get the navbar into a fixed position and the rest of
 to scroll independently of it. I then had to spend about 15 minutes or so googling around to
 find out how to set the Z-index to keep the navbar "on top" of everything else.
 03/10/2026
-Time to make the pictures actually look nice. I set their width and height.
+Time to make the pictures actually look nice. I set their width and height. I also used CSS
+Grid to obviate the UL I was using and better display the images of my pets and I and to pair
+the descriptive text.
+03/11/2026
+I cleaned up some spelling errors and expanded the text on my animals. I found out why the page
+was just a little too large. It had something to do with the .Main css entry being set to
+absolute. I also dressed up the section titles to be more noticeable
