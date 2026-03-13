@@ -37,3 +37,10 @@ the descriptive text.
 I cleaned up some spelling errors and expanded the text on my animals. I found out why the page
 was just a little too large. It had something to do with the .Main css entry being set to
 absolute. I also dressed up the section titles to be more noticeable
+03/12/2026
+Today's job is to populate the Projects section. Initially this is going to be links to various
+Github repos that I have for previous school projects that are worth displaying. The TypeSCript
+text adventure will actually be a workable link to another page, but it currently doesn't compile
+on my system. I have installed the NPM tsc compiler, but I probably need to restart before it
+will compile and run correctly. The RoboSnake TS was prebuilt, and thus seems to work. I have
+added a few other project and given them appropraite subheaders.

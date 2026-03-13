@@ -1,0 +1,40 @@
+Starting code review in /src in alphabetical order
+Agent.ts:
+4 players dicated by Player enum
+4 direction dicatated by enum
+AgentMove is a nightmare, and seriously needs to be abstracted out
+RandomMotion could use a little help, but isn't bad
+TryMove is poorly named... might be better named "look" or re-coded to return a bool
+
+DrawingLibrary.ts:
+ScheduleNextUpdate seems to control the refresh rate for the game... based on some TimeOut variables that I don't quite understand
+canvas is a shorthand for the HTML canvas element
+ResetCanvas seems to do what it says on the tin
+CELL_SIZE seems clear enough... If we make the board size resizable or scalable to screen this wouldn need to modify, otherwise fine
+FillCell - yup.. fills a cell, or a portion of a cell
+UpdateLost just displays a you lose screen to the appropriate player, might want to find a way to remove the player enum from the parameters
+UpdateApples ... seems obvious, but not quite sure if this is supposed to update a number of apples "eaten" by the player in come count, or update the apples displayed in the canvas
+
+GameRunner.ts:
+Type MaybeCell is a little annoying... seems to be a way of avoiding checking for "nulls" and Cells and instead checking for "outside" and Cells... which... fine
+ScreenPart is clear enough... 
+Point is very simple... not quite sure why we need it though
+SnakeState extends point... for some reason.. maybe Point is used by something else as well? The Public setter SetPoint could probably be better named
+GetScreenPart is doing a lot of heavy lifting.  There's "new"s in here which makes think this is initializing something, and it shouldn't be?  This seems to be grabbing data from Screen and returning it as a MaybeCell... this could be done better I think.
+Run seems clear enough... initialize 4 agents (might want to make this scalable), initialize the Agents Starting positions, Draw the screen, then start scheduling screenupdates... which might be better named "DrawNextFrame" or something
+LocationAfterMotion is pretty clearly named, but might not belong in this class?
+Step is also doing a lot of heavy lifting in terms of egenerating the next frame.  the section generating new apples should probably refactored into a function, The 4 case satements checking to see if any of the players lost defintely needs to be refactored out into a function.  A Minro nitpick, but I'd probably change the negative OR logic in the loss check to positve AND logic cause it reads better to me.
+
+GameScreen.ts
+Cell typed defined here
+GameScreen defined here, first time I have seen it
+An initialize function for GameScreen... maybe this should be a class?
+Draw  is clear enough, but if this were a class with a consctructor, we could make the colors customizable and such...
+
+Main.ts
+very simple... no notes.
+
+running the game:
+runs slowly.. would be nice to alter the framerate.  Coloring the player letters at the top would be cool too.  There is, indeed, an Apples counter at the top.
+
+Time to step away for a bit before starting the assignment proper.
