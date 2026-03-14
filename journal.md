@@ -44,3 +44,10 @@ text adventure will actually be a workable link to another page, but it currentl
 on my system. I have installed the NPM tsc compiler, but I probably need to restart before it
 will compile and run correctly. The RoboSnake TS was prebuilt, and thus seems to work. I have
 added a few other project and given them appropraite subheaders.
+03/13/2026
+I transformed the navbar links into buttons and added some javascript that would cause the
+individual sections to be hidded/displayed when the buttons were clicked. This proved to be
+much easier said than done. The About Me section refused to be hidden. Turns out this was
+the CSS value of display: grid was overriding the hidden attribute. I updated the js to
+alter the display CSS attribute for the About section and it worked fine, but now I felt
+like I was mixing modes in my code, so I updated all the js to alter display values.

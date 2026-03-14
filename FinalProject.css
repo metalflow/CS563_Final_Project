@@ -29,7 +29,7 @@
 }
 
 .Main .About {
-  display: grid;
+  display: none;
   grid-template-columns: 25% 25% 25% 25%;
   grid-template-rows: repeat(6, "1fr");
   width: 100%;
@@ -70,6 +70,18 @@
 
 .Main .ContactHeader {
   background-color: var(--darkgolden);
+}
+
+.Main .PreviousWork {
+  display: none;
+}
+
+.Main .Projects {
+  display: none;
+}
+
+.Main .Contact {
+  display: none;
 }
 
 @media (max-width: 415px) {

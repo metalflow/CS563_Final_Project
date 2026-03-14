@@ -5,19 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" />
     <title>CS 563 Winter Session 2026 Final Project for Cole Risch</title>
+    <script defer src="index.js"></script>
     <link rel="stylesheet" href="FinalProject.css" />
   </head>
   <body class="Body">
     <div class="NavBar">
-      <div class="NavAbout"><a href="#">About</a></div>
-      <div class="NavPrevious Work">
-        <a href="#">Previous Work</a>
-      </div>
-      <div class="NavProjects"><a href="#">Projects</a></div>
-      <div class="NavContact"><a href="#">Contact</a></div>
+      <input type="button" value="About" id="AboutButton" class="NavAbout" />
+
+      <input
+        type="button"
+        value="Previous Work"
+        id="PreviousWorkButton"
+        class="NavPreviousWork"
+      />
+      <input
+        type="button"
+        value="Projects"
+        id="ProjectsButton"
+        class="NavProjects"
+      />
+      <input
+        type="button"
+        value="Contacts"
+        id="ContactsButton"
+        class="NavContacts"
+      />
     </div>
     <div class="Main">
-      <div class="About">
+      <div class="About" id="About">
         <div class="AboutHeader"><h3>About Me</h3></div>
         <p class="AboutSelfieDesciption">
           I am a 43 year old man. I have strawberry blond hair and a decent neck
@@ -83,7 +98,7 @@
           take one calss a quarter.
         </p>
       </div>
-      <div class="PreviousWork">
+      <div class="PreviousWork" id="PreviousWork">
         <h3 class="PreviousWorkHeader">Previous Work</h3>
         <p>
           My first "big boy job" was working at Sunquest Information Systems. I
@@ -108,7 +123,7 @@
           their own custom protocol from whole cloth.
         </p>
       </div>
-      <div class="Projects">
+      <div class="Projects" id="Projects">
         <h3 class="ProjectsHeader">Projects</h3>
         <h4 id="RustSubHeader">Rust</h4>
         <div id="Solar_System_Model">
@@ -183,7 +198,7 @@
           </p>
         </div>
       </div>
-      <div class="Contact">
+      <div class="Contact" id="Contact">
         <h3 class="ContactHeader">Contact</h3>
         <h2>Cole Risch</h2>
         <p>Based out of Washington State</p>
