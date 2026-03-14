@@ -10,7 +10,7 @@ page to publish. Iw ll have to come back and see what's going on.
 about 30 minutes.
 03/01/2026
 I noticed that Week9 included some work on getting the GITGUB.Io stuff to work, so I decided
-to just work in LIveServer and get some basics done before I did anything fancy.
+to just work in LiveServer and get some basics done before I did anything fancy.
 All I did today was fill out the actual text of the sections and import some pictures of myself,
 my dog, and my cats. This took about an hour. Liveserver displays this webpage much like
 the most basic MySpace page for the early 90's. I thought about trying to include a web assembly
@@ -51,3 +51,13 @@ much easier said than done. The About Me section refused to be hidden. Turns out
 the CSS value of display: grid was overriding the hidden attribute. I updated the js to
 alter the display CSS attribute for the About section and it worked fine, but now I felt
 like I was mixing modes in my code, so I updated all the js to alter display values.
+03/14/2026
+I read over the requirements for this project and added the readme.md. Not a very complicated
+document as most of this is standalone. I did have to borrow a webcam and install ZOOM on
+this computer in order to record the video presentation. When I looked at my website, I
+thought that the inital display of just a white screen with 4 buttons at the top wasn't very
+splashy. So I took a few minute to add an inital display that gave some instructions and
+didn't make the initial display feel so empty. The splash screen resisted being hidden,
+just like the previous content, and I had to wrestle with it for a while. I eventually found
+that there was an errant semicolon in my JS. I also took some time to read over my text again
+and clean up spelling mistakes.

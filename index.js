@@ -6,6 +6,7 @@ var AboutSection = document.getElementById("About");
 var PreviousWorkSection = document.getElementById("PreviousWork");
 var ProjectsSection = document.getElementById("Projects");
 var ContactSection = document.getElementById("Contact");
+var SplashScreenSection = document.getElementById("SplashScreen");
 
 AboutButton.addEventListener("click", handleAboutClick);
 PreviousWorkButton.addEventListener("click", handlePreviousWorkClick);
@@ -18,6 +19,7 @@ function handleAboutClick(event) {
   PreviousWorkSection.style.display = "none";
   ProjectsSection.style.display = "none";
   ContactSection.style.display = "none";
+  SplashScreenSection.style.display = "none";
 }
 
 function handlePreviousWorkClick(event) {
@@ -26,6 +28,7 @@ function handlePreviousWorkClick(event) {
   PreviousWorkSection.style.display = "block";
   ProjectsSection.style.display = "none";
   ContactSection.style.display = "none";
+  SplashScreenSection.style.display = "none";
 }
 
 function handleProjectsClick(event) {
@@ -34,6 +37,7 @@ function handleProjectsClick(event) {
   PreviousWorkSection.style.display = "none";
   ProjectsSection.style.display = "block";
   ContactSection.style.display = "none";
+  SplashScreenSection.style.display = "none";
 }
 
 function handleContactClick(event) {
@@ -42,4 +46,5 @@ function handleContactClick(event) {
   PreviousWorkSection.style.display = "none";
   ProjectsSection.style.display = "none";
   ContactSection.style.display = "block";
+  SplashScreenSection.style.display = "none";
 }

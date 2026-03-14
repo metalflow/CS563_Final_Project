@@ -24,8 +24,14 @@
 }
 
 .Main {
-  /*position: absolute;*/
   width: 100%;
+}
+
+.Main .SplashScreen {
+  display: grid;
+  text-align: center;
+  grid-template-columns: 1;
+  grid-template-rows: 2;
 }
 
 .Main .About {
